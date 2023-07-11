@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Blood Bank</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a blood dontation Website">
+        <meta name="author" content="ShriKumaran,Anu Cyril Saju,Swati Anandan">
+        <meta name="view-port" content="width=device-width initial-height=1.0">
+        <link rel="stylesheet" type="text/css" href="donor_home.css">
+        <script>
+            function view()
+            {
+                const successCallback = (position) => {
+                                console.log(position);
+                                };
+                const errorCallback = (error) => {
+                                console.log(error);
+                                };
+                navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+                window.location.href="https://www.google.com/maps/search/blood+bank/@postion.coords.latitude,position.coords.logitude,10z/data=!3m1!4b1";   
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <img src="homepagelogo.png" height="70px">
+            <label><b>Life Blood Bank Management System</b></label>
+            <ul>
+            <li><a href="donor_history.html">View History</a></li>
+            <li><a href="viewreq.html">View Requests</a></li>
+            <li><a href="bookapmt.html">Book Appoinments</a></li>
+            <li><a href="viewbank.html">View Blood Banks</a></li>
+            </ul>
+        </nav>
+        <button onclick="view()" id="view">View All Blood Banks in Map</button><br>
+        <center>
+            <table>
+                <caption>Blood Banks</caption>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th colspan="8">Blood groups</th>
+                </tr>
+                <tr>
+                    <th>A+</th>
+                    <th>A-</th>
+                    <th>B+</th>
+                    <th>B-</th>
+                    <th>O+</th>
+                    <th>O-</th>
+                    <th>AB+</th>
+                    <th>AB-</th>
+                </tr>
+                <tr>
+                    <td><a href="https://www.google.com/maps/dir//Global+Hospitals+Blood+Bank+(A+Unit+Of+Rabindranath+Ge+Medical+Association+Private+Limited),+439,+Cheran+Nagar,+Perumbakkam,+Chennai,+Tamil+Nadu+600100/@12.8980133,80.0743818,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a525c0a70e91b01:0x2b4925c5846c8398!2m2!1d80.2062167!2d12.8980053">Global Hospitals Blood Bank</a></td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.google.com/maps/dir//Chettinad+Hospital+And+Research+Institute+Blood+Bank,+Kelambakkam,+Tamil+Nadu+603103/@12.7956869,80.0851971,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a52509a7591813d:0xfded30845d560ea6!2m2!1d80.2169757!2d12.7955087">Chettinad Hospital And Research Institute Blood Bank</a></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.google.com/maps/dir//R2FX%2B8GQ+SRM+Blood+Bank,+Potheri,+SRM+Nagar,+Kattankulathur,+Tamil+Nadu+603203/@12.8233403,79.9170171,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a52f792e875cbdb:0x91d1d6fdeab519d!2m2!1d80.048853!2d12.8233403">SRM Blood Bank</a></td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

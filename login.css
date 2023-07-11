@@ -1,0 +1,44 @@
+/*Login*/
+*
+{
+    margin:0;
+    padding:0;
+}
+nav
+{
+    background-color:#3f3636;
+    height:80px;
+}
+nav label
+{
+    font-family:Helvetica,sans-serif;
+    font-size:30px;
+    color:#CF0000;
+    transform:translateY(-20px);
+    display:inline-block;
+}
+div
+{
+    font-size:1.2em;
+    font-family:playfair,serif;
+    font-weight:bold;
+    border:5px groove rgb(188, 14, 14);
+    width: 40%;
+    padding:10px;
+    margin-top:110px;
+    background-image: url(rbc1.png);
+    background-size: contain;
+}
+a
+{
+  text-decoration: none;
+  color: rgb(4, 16, 84);
+}
+#submit-btn
+{
+    font-size:0.8em;
+    cursor:pointer;
+	  border-radius:20px;
+    font-family:helvetica,serif;
+    padding:5px 15px;
+}

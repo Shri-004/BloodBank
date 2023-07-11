@@ -1,0 +1,92 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+nav
+{
+    background-color:#3f3636;
+    height:80px;
+}
+nav label
+{
+    font-family:Helvetica,sans-serif;
+    font-size:30px;
+    color:#CF0000;
+    /* color:black; */
+    transform:translateY(-20px);
+    display:inline-block;
+}
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3f3636;
+  float:right;
+}
+
+li {
+  float: right;
+  font-size:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.grid-container
+{
+    display:grid;
+    grid-template-columns:250px 250px 250px 250px;
+    grid-template-rows: 150px 150px;
+    grid-gap:50px 50px;
+    padding-top:20px;
+    margin:0 50px 0 50px;
+    height:100px;
+    border:1px solid black;
+    height:400px;
+    padding-left:50px;
+    background-color:white;
+}
+.grid-item
+{
+    border:1px solid black;
+    background:linear-gradient(rgba(228, 74, 74,0.5),rgba(228,74,74,0.3));
+}
+#main-container
+{
+    background:url(bloodbankback.jpg);
+    background-size:cover;
+    height:600px;
+}
+.grid-item:hover
+{
+    transform:scale(1.08);
+}
+
+.grid-item img
+{
+    float:right;
+}
+div center
+{
+    font-size:50px;
+    color:black;
+    font-weight:bold;
+    padding-bottom:20px;
+}
+.footer
+{
+    background-color:rgba(0, 0, 0, 0.404);
+    text-align:center;
+    font-size:20px;
+    height:50px;
+}
+

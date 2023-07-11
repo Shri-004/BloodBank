@@ -1,0 +1,109 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+nav
+{
+    background-color:#3f3636;
+    height:80px;
+}
+nav label
+{
+    font-family:Helvetica,sans-serif;
+    font-size:30px;
+    color:#CF0000;
+    transform:translateY(-20px);
+    display:inline-block;
+}
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3f3636;
+  float:right;
+}
+
+li {
+  float: right;
+  font-size:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.grid-container
+{
+    display:grid;
+    grid-template-columns:60% 40%;
+}
+li a:hover{
+  background-color: #111;
+}
+#tab-tit
+{
+    background-color:red;
+}
+.grid-item table
+{
+    margin-top:60px;
+    font-size:20px;
+    border-collapse:collapse;
+
+}
+.grid-item table tr td,.grid-item table tr th
+{
+    padding:10px 10px 10px 10px;
+}
+table .red
+{
+    color:red;
+    font-weight:bold;
+}
+.container-2
+{
+    display:grid;
+    grid-template-rows:200px 500px;
+    text-align:center;
+    margin:0 100px 0 100px;
+    font-size:20px;
+}
+.container-2-item
+{
+    display:grid;
+    grid-template-columns:33% 33% 33%;
+    grid-template-rows:200px 200px;
+    border-collapse:collapse;
+    column-gap:10px;
+    row-gap:10px;
+}
+.container-2-item > .inner-item
+{
+    border:1px solid rgba(0,0,0,0.4);
+    background:linear-gradient(rgba(231, 21, 21,0.7),rgba(231,21,21,0.3))
+    /* background-size:cover; */
+}
+.container-2 div h2
+{
+    color:red;
+}
+.inner-item:hover
+{
+    transform:scale(1.05);
+}
+.footer
+{
+    background-color:rgba(0, 0, 0, 0.404);
+    text-align:center;
+    font-size:20px;
+    height:50px;
+}
+
